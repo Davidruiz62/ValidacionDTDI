@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha: 02/04/2025
+Ejercicio 2.
+-->
+<!--Jugadores de una liga de baloncesto.-->
+<!DOCTYPE liga [
+    <!ELEMENT liga (jugador+)>
+    <!ELEMENT jugador (nombre, apellidos, edad, equipo)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT equipo (nombre, ciudad, presidente)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT presidente (nombrePresidente, apellidosPresidente)>
+    <!ELEMENT nombrePresidente (#PCDATA)>
+    <!ELEMENT apellidosPresidente (#PCDATA)>
+]>
+<liga>
+    <jugador>
+        <nombre>Andres</nombre>
+        <apellidos>Casas</apellidos>
+        <edad>21</edad>
+        <equipo>
+            <nombre>Baloncesto Parla</nombre>
+            <ciudad>Madrid</ciudad>
+            <presidente>
+                <nombrePresidente>David</nombrePresidente>
+                <apellidosPresidente>Ruiz</apellidosPresidente>
+            </presidente>
+        </equipo>
+    </jugador>
+
+    <jugador>
+        <nombre>Adrian</nombre>
+        <apellidos>Huertas</apellidos>
+        <edad>21</edad>
+        <equipo>
+            <nombre>Parla Basket</nombre>
+            <ciudad>Parla</ciudad>
+            <presidente>
+                <nombrePresidente>Maria</nombrePresidente>
+                <apellidosPresidente>Gamero</apellidosPresidente>
+            </presidente>
+        </equipo>
+    </jugador>
+
+    <jugador>
+        <nombre>Martha</nombre>
+        <apellidos>Ruiz</apellidos>
+        <edad>21</edad>
+        <equipo>
+            <nombre>Zaragoza Bascket</nombre>
+            <ciudad>Zaragoza</ciudad>
+            <presidente>
+                <nombrePresidente>Rafael</nombrePresidente>
+                <apellidosPresidente>Ruiz</apellidosPresidente>
+            </presidente>
+        </equipo>
+    </jugador>
+</liga>

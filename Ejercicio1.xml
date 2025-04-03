@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha: 02/04/2025
+Ejercicio 1.
+-->
+<!--Libros de una biblioteca.-->
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, editorial, autor, paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT paginas (#PCDATA)>
+]>
+
+<biblioteca>
+    <libro>
+        <titulo>El Monje que vendió su Ferrari</titulo>
+        <editorial>Plaza Janés</editorial>
+        <autor>
+            <nombre>Robin</nombre>
+            <apellidos>S.Sharma</apellidos>
+        </autor>
+        <paginas>209</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>El poder de la hora</titulo>
+        <editorial>Gaia Ediciones</editorial>
+        <autor>
+            <nombre>Eckhart</nombre>
+            <apellidos>Tolle</apellidos>
+        </autor>
+        <paginas>220</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>Habitos atomicos</titulo>
+        <editorial>Diana Esitorial</editorial>
+        <autor>
+            <nombre>James</nombre>
+            <apellidos>Clear</apellidos>
+        </autor>
+        <paginas>471</paginas>
+    </libro>
+</biblioteca>
